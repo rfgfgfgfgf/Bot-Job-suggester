@@ -10,7 +10,6 @@ def get_samples(interest_area):
     conn.close()
     return results
 
-# код для создание одной команды старт
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
         [InlineKeyboardButton(" Искусство", callback_data='art')],
